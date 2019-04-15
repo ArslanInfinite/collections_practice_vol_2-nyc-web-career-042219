@@ -15,8 +15,8 @@ def contain_a(array)
         a_array << arr
       end #end if
       i += 1
-    end 
-  end 
+    end
+  end
   a_array
 end
 
@@ -38,9 +38,9 @@ def count_elements(array)
     key[:count] = 1
     key.each do |k, v|
       if dup_name == v || dup_name == nil
-        dup_name = v 
+        dup_name = v
         key[:count] += 1
-      end 
+      end
     end
   end
   array.uniq
@@ -53,18 +53,18 @@ def merge_data(array1, array2)
         data.each do |detail_key, detail_value|
           if key[:first_name] == name
             key[detail_key] = detail_value
-          end 
-        end 
-      end 
-    end 
-  end 
+          end
+        end
+      end
+    end
+  end
   array1
 end
 
 def find_cool(array)
   array.select do |hash|
     hash[:temperature] === "cool"
-  end 
+  end
 end
 
 def organize_schools(array)
@@ -77,8 +77,8 @@ def organize_schools(array)
         new_hash[city] = school_array
       else
         new_hash[city] << school
-      end 
-    end 
-  end 
+      end
+    end
+  end
   new_hash
 end
